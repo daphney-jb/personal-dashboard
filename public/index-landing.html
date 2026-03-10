@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexBoard</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, serif;
+      background: #f5f3ee;
+      color: #1a1a1a;
+      padding: 60px 24px;
+    }
+    .wrap { max-width: 680px; margin: 0 auto; }
+    h1 { font-size: 2.5rem; margin-bottom: 16px; }
+    h1 span { color: #d94f30; }
+    .tagline { font-size: 1.1rem; color: #444; line-height: 1.6; margin-bottom: 40px; }
+    h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; color: #d94f30; margin-bottom: 12px; }
+    ul { list-style: none; margin-bottom: 40px; }
+    ul li { padding: 6px 0; border-bottom: 1px solid #e0ddd6; font-size: 0.95rem; color: #333; }
+    ul li::before { content: "→ "; color: #d94f30; }
+    footer { font-size: 0.85rem; color: #888; border-top: 1px solid #ddd; padding-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Nex<span>Board</span></h1>
+    <p class="tagline">A customizable personal dashboard that brings weather, tasks, news, and a whiteboard into one interface.</p>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Weather Widget (Open-Meteo)</li>
+      <li>Todo List</li>
+      <li>News Feed (Google News RSS)</li>
+      <li>Whiteboard</li>
+      <li>Custom Layout</li>
+    </ul>
+
+    <h2>Tech Stack</h2>
+    <ul>
+      <li>React 18 + Vite</li>
+      <li>React Router v6</li>
+      <li>Open-Meteo</li>
+      <li>Google News RSS</li>
+      <li>react-grid-layout</li>
+      <li>localStorage</li>
+      <li>Netlify</li>
+    </ul>
+
+    <footer>NexBoard.</footer>
+  </div>
+</body>
+</html>
