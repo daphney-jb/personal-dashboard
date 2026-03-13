@@ -1,4 +1,4 @@
-## Current State (Day 1 — Scaffold Complete)
+## Current State (Day 4 — News Feed Widget Complete)
 
 ### Done
 - [x] Vite + React project created
@@ -8,20 +8,21 @@
 - [x] Landing page (index-landing.html)
 - [x] README with project plan
 - [x] Deployed to Netlify
+- [x] Weather Widget (Open-Meteo) — temp, condition, humidity, wind, refresh, localStorage cache
+- [x] Todo Widget — add/complete/delete tasks, clear done, persisted in localStorage
+- [x] News Feed Widget — Google News RSS via rss2json, 7 topic filters, 15min cache, time-ago timestamps
 
 ### In Progress
 (nothing yet)
 
 ### Not Started
-- [ ] Weather Widget (Open-Meteo)
-- [ ] Todo List
 - [ ] News Feed (Google News RSS)
 - [ ] Whiteboard
 - [ ] Drag-and-drop layout
 - [ ] Dark mode
 
 ### Known Issues
-(none yet)
+- Weather location defaults to NYC if user denies geolocation
 
 ### Next Session
-Build Weather Widget (Phase 2)
+Build Whiteboard Widget (Phase 5)

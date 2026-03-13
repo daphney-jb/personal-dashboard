@@ -96,3 +96,309 @@ body {
   font-size: 0.9rem;
   color: #888;
 }
+
+/* Widget shared */
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.widget-header .widget-title {
+  margin-bottom: 0;
+}
+
+.widget-btn {
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1;
+  transition: background 0.15s;
+}
+
+.widget-btn:hover:not(:disabled) {
+  background: #f0f0f0;
+}
+
+.widget-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.widget-error {
+  font-size: 0.85rem;
+  color: #c0392b;
+}
+
+/* Weather Widget */
+.weather-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.weather-emoji {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.weather-temp {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1;
+}
+
+.weather-condition {
+  font-size: 1rem;
+  color: #555;
+}
+
+.weather-details {
+  display: flex;
+  gap: 16px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.weather-updated {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.weather-location {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 2px;
+}
+
+.weather-location-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+}
+
+.weather-location-input {
+  padding: 6px 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  width: 100%;
+}
+
+.weather-location-input:focus {
+  border-color: #888;
+}
+
+.weather-location-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.widget-header-actions {
+  display: flex;
+  gap: 4px;
+}
+
+/* Todo Widget */
+.todo-form {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.todo-input:focus {
+  border-color: #888;
+}
+
+.todo-add-btn {
+  white-space: nowrap;
+}
+
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+  border-radius: 6px;
+  transition: background 0.1s;
+}
+
+.todo-item:hover {
+  background: #f5f5f5;
+}
+
+.todo-check {
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #bbb;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #2ecc71;
+  font-weight: 700;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.todo-item--done .todo-check {
+  background: #f0faf4;
+  border-color: #2ecc71;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  word-break: break-word;
+}
+
+.todo-item--done .todo-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.todo-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1;
+  padding: 0 2px;
+  transition: color 0.15s;
+  flex-shrink: 0;
+}
+
+.todo-delete:hover {
+  color: #e74c3c;
+}
+
+/* News Feed Widget */
+.news-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.news-topic-btn {
+  padding: 3px 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 0.78rem;
+  cursor: pointer;
+  color: #555;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.news-topic-btn:hover {
+  background: #f0f0f0;
+}
+
+.news-topic-btn--active {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #fff;
+}
+
+.news-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.news-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-title {
+  display: block;
+  font-size: 0.875rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+
+.news-title:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.news-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.news-source {
+  font-weight: 500;
+}
+
+.news-country-select {
+  padding: 4px 6px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  background: #fff;
+  color: #444;
+  cursor: pointer;
+  outline: none;
+  max-width: 140px;
+}
+
+.news-country-select:focus {
+  border-color: #888;
+}
