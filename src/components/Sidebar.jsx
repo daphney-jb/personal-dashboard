@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 export default function Sidebar() {
   return (
     <aside className="sidebar">
-      <span className="sidebar-title">NexBoard</span>
+      <span className="sidebar-title">Nex<span className="accent">Board</span></span>
       <nav>
         <NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>
           Dashboard

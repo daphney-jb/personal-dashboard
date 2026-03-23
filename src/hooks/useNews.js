@@ -134,7 +134,7 @@ export function useNews() {
     const t = loadSaved(TOPIC_KEY, 'Top');
     const c = loadSaved(COUNTRY_KEY, 'United States');
     load(t, c);
-  }, []);
+  }, [load]);
 
   return { articles, loading, error, lastUpdated, topic, setTopic, country, setCountry, refresh };
 }

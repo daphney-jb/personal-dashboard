@@ -1,4 +1,4 @@
-## Current State (Day 4 — News Feed Widget Complete)
+## Current State (Day 7 — Drag-and-Drop Layout Complete)
 
 ### Done
 - [x] Vite + React project created
@@ -11,18 +11,18 @@
 - [x] Weather Widget (Open-Meteo) — temp, condition, humidity, wind, refresh, localStorage cache
 - [x] Todo Widget — add/complete/delete tasks, clear done, persisted in localStorage
 - [x] News Feed Widget — Google News RSS via rss2json, 7 topic filters, 15min cache, time-ago timestamps
+- [x] Whiteboard Widget — freehand canvas (pen/eraser, 6 colors + custom, stroke size), quick notes, both persisted to localStorage
+- [x] Dark mode — CSS variable theming, toggle in Settings, persisted to localStorage
+- [x] Drag-and-drop layout — reorder widgets via drag handle, persisted to nexboard_layout
 
 ### In Progress
 (nothing yet)
 
 ### Not Started
-- [ ] News Feed (Google News RSS)
-- [ ] Whiteboard
-- [ ] Drag-and-drop layout
-- [ ] Dark mode
+(all planned features complete)
 
 ### Known Issues
 - Weather location defaults to NYC if user denies geolocation
 
 ### Next Session
-Build Whiteboard Widget (Phase 5)
+All planned features complete. Polish, deploy, or add new features.

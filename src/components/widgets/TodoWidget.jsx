@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { getTodos, addTodo, toggleTodo, deleteTodo, clearDone } from '../../utils/todoStorage';
 
 export default function TodoWidget() {

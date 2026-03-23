@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useWeather } from '../../hooks/useWeather';
 
 export default function WeatherWidget() {
-  const { data, loading, error, lastUpdated, locationLabel, refresh, setLocation, useMyLocation } = useWeather();
+  const { data, loading, error, lastUpdated, locationLabel, refresh, setLocation, useMyLocation: requestMyLocation } = useWeather();
   const [editing, setEditing] = useState(false);
   const [query, setQuery] = useState('');
   const [geoError, setGeoError] = useState(null);
@@ -25,7 +25,7 @@ export default function WeatherWidget() {
     setEditing(false);
     setQuery('');
     setGeoError(null);
-    useMyLocation();
+    requestMyLocation();
   }
 
   return (
