@@ -50,5 +50,9 @@ https://api.open-meteo.com/v1/forecast?latitude=40.71&longitude=-74.01&current_w
 https://news.google.com/rss/search?q=technology&hl=en-US&gl=US&ceid=US:en
 ```
 
+## What I Learned
+
+Building NexBoard reinforced how important it is to break a multi-feature project into small, testable phases rather than trying to build everything at once. Working with external data sources like Open-Meteo and Google News RSS taught me how to handle API integration without backend as it is not my strong-suit. The biggest challenge was getting the drag-and-drop layout to work responsively across screen sizes while persisting user preferences in localStorage.  If I had more time, I would add user authentication so multiple people could save their own dashboards, integrate a backend database to sync data across devices, and add more widget options like a calendar or Pomodoro timer. Overall, this project pushed me to think about architecture decisions early and showed how planning upfront with context files and structured prompts made each coding session significantly more productive.
+
 ## License
 - MIT
