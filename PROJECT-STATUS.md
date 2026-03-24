@@ -16,7 +16,7 @@
 - [x] Drag-and-drop layout — reorder widgets via drag handle, persisted to nexboard_layout
 
 ### In Progress
-(nothing yet)
+(nothing)
 
 ### Not Started
 (all planned features complete)
