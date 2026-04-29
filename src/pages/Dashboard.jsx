@@ -3,17 +3,20 @@ import WeatherWidget from '../components/widgets/WeatherWidget';
 import TodoWidget from '../components/widgets/TodoWidget';
 import NewsFeedWidget from '../components/widgets/NewsFeedWidget';
 import WhiteboardWidget from '../components/widgets/WhiteboardWidget';
-import { getLayout, saveLayout } from '../utils/layoutStorage';
+import ClockWidget from '../components/widgets/ClockWidget';
+import { getLayout, saveLayout, getVisible } from '../utils/layoutStorage';
 
 const WIDGETS = {
   weather: <WeatherWidget />,
   todo: <TodoWidget />,
   news: <NewsFeedWidget />,
   whiteboard: <WhiteboardWidget />,
+  clock: <ClockWidget />,
 };
 
 export default function Dashboard() {
   const [order, setOrder] = useState(() => getLayout());
+  const [visible] = useState(() => getVisible());
   const dragId = useRef(null);
   const [dragOver, setDragOver] = useState(null);
 
@@ -49,9 +52,11 @@ export default function Dashboard() {
     setDragOver(null);
   }
 
+  const visibleOrder = order.filter(id => visible[id]);
+
   return (
     <div className="widget-grid">
-      {order.map(id => (
+      {visibleOrder.map(id => (
         <div
           key={id}
           className={`drag-wrapper${dragOver === id ? ' drag-wrapper--over' : ''}`}
